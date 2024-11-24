@@ -22,7 +22,6 @@ bevy = { version = "^0.14.0", default-features = false, optional = true }
 default = ["bevy", "fonts", "svg"]
 bevy = [
     "dep:bevy",
-    "dep:bevy-inspector-egui",
     "bevy/bevy_text",
     "bevy/bevy_ui",
 ]
