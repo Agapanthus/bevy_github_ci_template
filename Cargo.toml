@@ -16,4 +16,13 @@ opt-level = 1
 opt-level = 3
 
 [dependencies]
-bevy = "0.14"
+bevy = { version = "^0.14.0", default-features = false, optional = true }
+
+[features]
+default = ["bevy", "fonts", "svg"]
+bevy = [
+    "dep:bevy",
+    "dep:bevy-inspector-egui",
+    "bevy/bevy_text",
+    "bevy/bevy_ui",
+]
