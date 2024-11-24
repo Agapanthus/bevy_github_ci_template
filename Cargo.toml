@@ -19,7 +19,7 @@ opt-level = 3
 bevy = { version = "^0.14.0", default-features = false, optional = true }
 
 [features]
-default = ["bevy", "fonts", "svg"]
+default = ["bevy"]
 bevy = [
     "dep:bevy",
     "bevy/bevy_text",
